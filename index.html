@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에어비앤비: 휴가용 숙소</title>
+    <meta name="description" content="aribnb from wookeon" />
+    <meta name="author" content="Wookeon" />
+    <link rel="icon" type="image/png" href="img/airbnblogo.png" />
+    <script src="https://kit.fontawesome.com/d5cdb64e80.js" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="notice">
+        <a href="https://www.airbnb.co.kr/d/covidsafety" target=_blank>에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a>
+    </div>
+    <section id="home">
+        <nav class="navbar">
+            <button class="navbar__icon">
+                <i class="fab fa-airbnb"></i>
+                <span class="navbar__name">airbnb</span>
+            </button>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item">
+                    <button class="navbar__menu__itembtn active">숙소</button>
+                </li>
+                <li class="navbar__menu__item">
+                    <button class="navbar__menu__itembtn">체험</button>
+                </li>
+                <li class="navbar__menu__item">
+                    <button class="navbar__menu__itembtn">온라인 체험</button>
+                </li>
+            </ul>
+            <ul class="navbar__rightmenu">
+                <li class="navbar__rightmenu__list">
+                    <button class="navbar__rightmenu__host">호스트 되기</button>
+                </li>
+                <li class="navbar__rightmenu__list">
+                    <button class="navbar__rightmenu__globe"><i class="fas fa-globe"></i></button>
+                </li>
+                <li class="navbar__rightmenu__list">
+                    <button class="navbar__rightmenu__toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <section class="home__search">
+            <button class="search">
+                <div class="search__title">위치</div>
+                <div class="search__input">어디로 여행가세요?</div>
+            </button>
+            <div class="search__line"></div>
+            <button class="search">
+                <div class="search__title">체크인</div>
+                <div class="search__input">날짜 입력</div>
+            </button>
+            <div class="search__line"></div>
+            <button class="search">
+                <div class="search__title">체크 아웃</div>
+                <div class="search__input">날짜 입력</div>
+            </button>
+            <div class="search__line"></div>
+            <button class="search">
+                <div class="search__title">인원</div>
+                <div class="search__input">게스트 추가</div>
+            </button>
+            <button class="search__icon">
+                <i class="fas fa-search"></i>
+            </button>
+        </section>
+        <section class="home__center">
+            <img src="img/night2.jpg" alt="airbnb main img" class="home__img">
+            <div class="home__description">에어비앤비가<br>여행지를 찾아드릴게요!</div>
+            <button class="home__imgsearch">유연한 검색</button>
+        </section>
+    </section>
+</body>
+</html>

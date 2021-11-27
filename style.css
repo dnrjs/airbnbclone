@@ -5,7 +5,6 @@
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: black;
 }
 
 button {
@@ -23,6 +22,12 @@ ul {
   list-style: none;
 }
 
+h1 {
+  color: white;
+  font-size: 34px;
+  font-weight: 600;
+}
+
 .notice {
   background-color: #212121;
   width: 100%;
@@ -35,22 +40,25 @@ ul {
 }
 
 #home {
-  margin: 4px 64px;
+  padding: 4px 64px;
+  background-color: black;
+  height: 700px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   color: white;
+  transition: 2ms ease-in;
 }
 
 .navbar.navbar--dark {
-  background-color: blue;
+  background-color: whitesmoke;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 64px;
+  padding: 15px 64px;
 }
 
 .navbar__icon {
@@ -132,6 +140,7 @@ ul {
   background-color: white;
   color: black;
   border-radius: 24px;
+  border: 1px solid lightgray;
   padding: 8px 16px;
 }
 
@@ -149,6 +158,32 @@ ul {
   width: 75%;
   height: 60px;
   margin: auto;
+}
+
+.home__searchchange {
+  position: fixed;
+  top: 15px;
+  left: 480px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 36px;
+  background-color: white;
+}
+
+.home__searchchange__start {
+  margin: 14px 140px 14px 16px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.home__searchchange i {
+  margin: 4px;
+  padding: 10px 10px;
+  font-size: 14px;
+  color: white;
+  border-radius: 50%;
+  background-color: #ff5252;
 }
 
 .search {
@@ -200,10 +235,7 @@ ul {
 }
 
 .home__description {
-  color: white;
   text-align: center;
-  font-size: 36px;
-  font-weight: bold;
   transform: translateY(-200px);
 }
 
@@ -215,4 +247,51 @@ ul {
   padding: 10px 30px;
   border-radius: 36px;
   color: #8e24aa;
+}
+
+#idea {
+  padding: 50px 64px;
+}
+
+.idea__title {
+  color: black;
+  padding-bottom: 8px;
+}
+
+.idea__trip {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.idea__trip__where {
+  border-radius: 16px;
+  padding: 0 8px;
+}
+
+.idea__trip__img {
+  width: 270px;
+  height: 180px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.idea__trip__city {
+  width: 270px;
+  height: 180px;
+  color: white;
+  text-align: left;
+  padding: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  transform: translateY(-4px);
+}
+
+.idea__trip__distance {
+  padding: 8px 0;
+}
+
+.idea__trip__city h1 {
+  margin: 0;
+  font-size: 26px;
 }

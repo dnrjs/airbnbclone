@@ -7,7 +7,7 @@
     <title>에어비앤비: 휴가용 숙소</title>
     <meta name="description" content="aribnb from wookeon" />
     <meta name="author" content="Wookeon" />
-    <link rel="icon" type="image/png" href="img/airbnblogo.png" />
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
     <script src="https://kit.fontawesome.com/d5cdb64e80.js" crossorigin="anonymous">
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,6 +52,10 @@
                 </li>
             </ul>
         </nav>
+        <div class="navbar__rogin">
+            <button>회원가입</button>
+            <button>로그인</button>
+        </div>
         <section class="home__search">
             <button class="search">
                 <div class="search__title">위치</div>
@@ -79,6 +83,10 @@
         <button class="home__searchchange">
             <div class="home__searchchange__start">검색 시작하기</div>
             <i class="fas fa-search"></i>
+        </button>
+        <button class="smallsearch">
+            <i class="fas fa-search"></i>
+            <span class="smallsearch__title">어디로 여행가세요?</span>
         </button>
         <section class="home__center">
             <img src="img/night2.jpg" alt="airbnb main img" class="home__img">
@@ -127,5 +135,51 @@
             </li>
         </ul>
     </section>
+    <section id="activity">
+        <h1 class="activity__title">에어비앤비 체험 둘러보기</h1>
+        <ul class="activity__first">
+            <li class="activity__first__list">
+                <img src="img/cave.jpg" alt="cave" class="activity__first__cave">
+                <div class="activity__first__menu">
+                    <p class="activity__first__description">여행 중 만나는<br>이색적인 즐길 거리</p>
+                    <button class="activity__first__button">체험</button>
+                </div>
+            </li>
+            <li class="activity__first__list">
+                <img src="img/home.jpg" alt="home" class="activity__first__home">
+                <div class="activity__first__menu">
+                    <p class="activity__first__description">집에서 만나는<br>다양한 즐길 거리</p>
+                    <button class="activity__second__button">온라인 체험</button>
+                </div>
+                
+            </li>
+        </ul>
+    </section>
+    <section id="answer">
+        <p class="answer__description">호스팅에 관해<br>궁금하신 점이<br>있나요?</p>
+        <button class="answer__button">슈퍼호스트에게 물어보세요</button>
+    </section>
+    <div class="scrollup">
+        <ul class="scrollup__navbar">
+            <li class="scrollup__navbar__item">
+                <button class="scrollup__navbar__button">
+                    <i class="fas fa-search"></i>
+                    <div>둘러보기</div>
+                </button>
+            </li>
+            <li class="scrollup__navbar__item">
+                <button class="scrollup__navbar__button">
+                    <i class="far fa-heart"></i>
+                    <div>위시리스트</div>
+                </button>
+            </li>
+            <li class="scrollup__navbar__item">
+                <button class="scrollup__navbar__button">
+                    <i class="fas fa-user-circle"></i>
+                    <div>로그인</div>
+                </button>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
